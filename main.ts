@@ -8,9 +8,7 @@ input.onButtonPressed(Button.A, function () {
         Contraseña = randint(1, 3)
         if (Contraseña == 1) {
             Num = randint(1, 9)
-            if (Num == 0) {
-                basic.showNumber(0)
-            }
+            basic.showString("" + (Num))
         } else if (Contraseña == 2) {
             Letras = randint(1, 4)
             if (Letras == 1) {
@@ -23,7 +21,7 @@ input.onButtonPressed(Button.A, function () {
                 basic.showString("D")
             }
         } else if (Contraseña == 3) {
-            Simbol = randint(1, 10)
+            Simbol = randint(1, 4)
             if (Simbol == 1) {
                 basic.showString("*")
             } else if (Simbol == 2) {
@@ -34,6 +32,6 @@ input.onButtonPressed(Button.A, function () {
                 basic.showString("·")
             }
         }
-        basic.pause(2000)
+        basic.pause(200)
     }
 })
